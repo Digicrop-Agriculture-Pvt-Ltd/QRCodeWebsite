@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="The Journey of Your Grapes - Grape farming timeline and resource guide" />
+  <title>The Journey of Your Grapes</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Material Icons for the stage icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div id="root">
+    <div class="App">
+      <div class="main">
+
+        <!-- ========== HERO SECTION ========== -->
+        <div class="hero-section">
+          <div class="hero-overlay">
+            <h6 class="hero-title">THE JOURNEY OF YOUR GRAPES</h6>
+            <div class="hero-info">
+              <div class="info-row">
+                <span class="info-label">Farmer name</span>
+                <span class="info-colon">:</span>
+                <span class="info-value" id="farmer-name"></span>
+              </div>
+              <div class="info-row">
+                <span class="info-label">Variety</span>
+                <span class="info-colon">:</span>
+                <span class="info-value" id="variety"></span>
+              </div>
+              <div class="info-row">
+                <span class="info-label">Location</span>
+                <span class="info-colon">:</span>
+                <span class="info-value" id="location"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ========== TIMELINE CARDS ========== -->
+        <div class="timeline-container">
+
+          <!-- Card 1: Forward Pruning -->
+          <div class="stage-card">
+            <div class="card-header-row">
+              <div class="stage-icon-wrap">
+                <span class="material-icons stage-icon">local_shipping</span>
+              </div>
+              <h5 class="stage-title">Forward Pruning :</h5>
+            </div>
+            <hr class="separator" />
+            <div class="card-body-content">
+              <p>
+                These shoots after maturity are called as canes, which are <strong>pruned</strong> after 5th bud position in table
+                <strong>grapes</strong> and 3-4 bud in wine grapes during September-October for fruits. Hence this pruning is called as forward
+                pruning or fruit pruning.... The same canes are pruned back to 3-4 buds after harvesting the crop in summer.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2: Bud Breaking -->
+          <div class="stage-card">
+            <div class="card-header-row">
+              <div class="stage-icon-wrap">
+                <img src="https://grapes-journey.web.app/images/budbreaking.png" alt="Bud Breaking" class="stage-img-icon" />
+              </div>
+              <h5 class="stage-title">Bud Breaking :</h5>
+            </div>
+            <hr class="separator" />
+            <div class="card-body-content side-by-side">
+              <div class="text-side">
+                <p>
+                  After pruning, the vine goes dormant. Bud break is when the buds begin to swell and burst open, initiating
+                  a new season of vegetative growth. This occurs when temperatures rise and can be influenced by rainfall and
+                  irrigation. Applying hydrogen cyanamide (a chemical dormancy breaker) ensures uniform bud break.
+                </p>
+              </div>
+              <div class="img-side">
+                <img src="https://grapes-journey.web.app/images/TimeLineimg1.jpg" alt="Bud Breaking" class="stage-photo" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Flowering -->
+          <div class="stage-card">
+            <div class="card-header-row">
+              <div class="stage-icon-wrap">
+                <img src="https://grapes-journey.web.app/images/flowering.png" alt="Flowering" class="stage-img-icon" />
+              </div>
+              <h5 class="stage-title">Flowering :</h5>
+            </div>
+            <hr class="separator" />
+            <div class="card-body-content side-by-side reverse">
+              <div class="text-side">
+                <p>
+                  These <strong>flowers</strong> are grouped in bunches called <strong>inflorescences</strong>. In many species, such as Vitis vinifera,
+                  each successfully pollinated flower becomes a grape berry with the inflorescence turning into a cluster of grapes.
+                  While the flowers of the grapevines are usually very small, the berries are often large and brightly colored with sweet
+                  flavors that attract birds and other animals to disperse the seeds contained within the berries.
+                </p>
+              </div>
+              <div class="img-side">
+                <img src="https://grapes-journey.web.app/images/TimeLineimg2.png" alt="Flowering" class="stage-photo" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Fruit Set -->
+          <div class="stage-card">
+            <div class="card-header-row">
+              <div class="stage-icon-wrap">
+                <img src="https://grapes-journey.web.app/images/flowering.png" alt="Fruit Set" class="stage-img-icon" />
+              </div>
+              <h5 class="stage-title">Fruit Set:</h5>
+            </div>
+            <hr class="separator" />
+            <div class="card-body-content side-by-side">
+              <div class="img-side">
+                <img src="https://grapes-journey.web.app/images/TimeLineimg3.jpg" alt="Fruit Set" class="stage-photo" />
+              </div>
+              <div class="text-side">
+                <p>
+                  Fruit set is the stage roughly defined by peppercorn-sized berries (i.e. immediately after bloom), although berries
+                  throughout a vineyard, and even within a cluster, are often at different transitional stages
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5: Veraison -->
+          <div class="stage-card">
+            <div class="card-header-row">
+              <div class="stage-icon-wrap">
+                <img src="https://grapes-journey.web.app/images/veraision.png" alt="Veraison" class="stage-img-icon" />
+              </div>
+              <h5 class="stage-title">Veraison :</h5>
+            </div>
+            <hr class="separator" />
+            <div class="card-body-content side-by-side reverse">
+              <div class="text-side">
+                <p>
+                  Veraison is not a physiological growth stage, but an artificial designation between the two growth periods of grape berry development.
+                </p>
+              </div>
+              <div class="img-side">
+                <img src="https://grapes-journey.web.app/images/TimeLineimg4.jpg" alt="Veraison" class="stage-photo" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6: Ready to Harvest -->
+          <div class="stage-card">
+            <div class="card-header-row">
+              <div class="stage-icon-wrap">
+                <img src="https://grapes-journey.web.app/images/harvest.png" alt="Ready to Harvest" class="stage-img-icon" />
+              </div>
+              <h5 class="stage-title">Ready to Harvest:</h5>
+            </div>
+            <hr class="separator" />
+            <div class="card-body-content">
+              <p>
+                All varieties of grape are preclimateric -- they don't ripen once they're taken off the vine. Grapes picked early in the day.
+                Brix of &gt; 18% gives better test.
+              </p>
+            </div>
+          </div>
+
+        </div>
+        <!-- /timeline-container -->
+
+        <!-- ========== RESOURCE USAGE SECTION ========== -->
+        <div class="resource-section">
+          <div class="resource-card">
+            <h5 class="resource-title">Resource usage</h5>
+            <div class="resource-grid">
+              <div class="resource-pill optimum">Optimum</div>
+              <div class="resource-pill minimum">Minimum</div>
+              <div class="resource-pill high">High</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ========== FOOTER / ACTION SECTION ========== -->
+        <div class="footer-section">
+          <div class="footer-card">
+            <strong class="fssai-text">Complaint as per FSSAI</strong>
+            <button class="get-report-btn" onclick="handleGetReport()">Get Report</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

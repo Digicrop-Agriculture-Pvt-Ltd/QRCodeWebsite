@@ -1,0 +1,356 @@
+/* =======================================
+   GRAPES JOURNEY - CLONE STYLES
+   ======================================= */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  background-color: #dcdcdc;
+  color: #212529;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* ---- App wrapper ---- */
+.App {
+  min-height: 100vh;
+  background-color: #dcdcdc;
+}
+
+.main {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* ========================================
+   HERO SECTION
+   ======================================== */
+.hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('https://grapes-journey.web.app/images/time_line-img.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.hero-title {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.hero-info {
+  width: 100%;
+  max-width: 760px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.info-row {
+  background-color: rgba(0, 0, 0, 0.45);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 18px 28px;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  gap: 8px;
+}
+
+.info-label {
+  flex: 1;
+  font-size: 1.1rem;
+}
+
+.info-colon {
+  font-size: 1.2rem;
+  font-weight: 500;
+  flex: 0 0 auto;
+}
+
+.info-value {
+  flex: 1.5;
+  font-size: 1.1rem;
+  padding-left: 10px;
+}
+
+/* ========================================
+   TIMELINE CARDS
+   ======================================== */
+.timeline-container {
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: #dcdcdc;
+}
+
+.stage-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px 20px 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.2s ease;
+}
+
+.stage-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+}
+
+/* Card header: icon + title */
+.card-header-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 10px;
+}
+
+.stage-icon-wrap {
+  width: 42px;
+  height: 42px;
+  background-color: #3a5ea8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.stage-icon {
+  color: #ffffff;
+  font-size: 20px !important;
+}
+
+.stage-img-icon {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.stage-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0;
+}
+
+/* Separator */
+.separator {
+  border: none;
+  border-top: 1px solid #dee2e6;
+  margin: 10px 0 16px;
+}
+
+/* Card body */
+.card-body-content p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #212529;
+}
+
+/* Side-by-side layout */
+.side-by-side {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.side-by-side.reverse {
+  flex-direction: row;
+}
+
+.text-side {
+  flex: 1;
+}
+
+.img-side {
+  flex: 0 0 auto;
+}
+
+.stage-photo {
+  width: 180px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+}
+
+/* For Fruit Set card: image on left */
+.side-by-side:not(.reverse) .img-side {
+  order: -1;
+}
+
+/* ========================================
+   RESOURCE USAGE SECTION
+   ======================================== */
+.resource-section {
+  padding: 0 16px 16px;
+  background-color: #dcdcdc;
+}
+
+.resource-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.resource-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 14px;
+}
+
+.resource-grid {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.resource-pill {
+  flex: 1;
+  padding: 14px 10px;
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-radius: 4px;
+  color: #212529;
+  cursor: default;
+  transition: filter 0.2s ease;
+}
+
+.resource-pill:hover {
+  filter: brightness(0.92);
+}
+
+.resource-pill.optimum {
+  background-color: #64bd78;
+}
+
+.resource-pill.minimum {
+  background-color: #a1ecb2;
+}
+
+.resource-pill.high {
+  background-color: #87c03f;
+}
+
+/* ========================================
+   FOOTER / ACTION SECTION
+   ======================================== */
+.footer-section {
+  padding: 0 16px 20px;
+  background-color: #dcdcdc;
+}
+
+.footer-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 16px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.fssai-text {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #000000;
+}
+
+.get-report-btn {
+  width: 100%;
+  padding: 16px;
+  background-color: rgba(0, 0, 0, 0.698);
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.get-report-btn:hover {
+  background-color: rgba(0, 0, 0, 0.82);
+}
+
+.get-report-btn:active {
+  transform: scale(0.99);
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+@media (max-width: 600px) {
+  .hero-title {
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+  }
+
+  .info-row {
+    padding: 14px 18px;
+    font-size: 0.95rem;
+  }
+
+  .side-by-side {
+    flex-direction: column;
+  }
+
+  .stage-photo {
+    width: 100%;
+    height: 180px;
+  }
+
+  .resource-grid {
+    flex-direction: column;
+  }
+}
+
+/* ========================================
+   SCROLL ANIMATIONS
+   ======================================== */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
