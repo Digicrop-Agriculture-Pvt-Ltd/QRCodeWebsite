@@ -19,7 +19,7 @@ const farmData = {
 function loadFarmData() {
   const params = new URLSearchParams(window.location.search);
 
-  const farmer = params.get("farmer") || farmData.farmerName;
+  const farmer = params.get("farmerName") || farmData.farmerName;
   const variety = params.get("variety") || farmData.variety;
   const location = params.get("location") || farmData.location;
 
